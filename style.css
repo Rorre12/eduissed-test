@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: cursive;
+	font-family: Roboto, cursive;
 }
 a {
 	text-decoration: none;
@@ -26,7 +26,7 @@ li {
 .nav-links a {
 	color: #fff;
 }
-/* LOGO */
+/* Logo */
 .logo {
 	font-size: 32px;
 }
@@ -34,7 +34,7 @@ li {
 .logo img {
 	width: 100px;
 }
-/* NAVBAR MENU */
+/* Navbar */
 .menu {
 	display: flex;
 	gap: 1em;
@@ -48,30 +48,31 @@ li {
 .menu li {
 	padding: 5px 14px;
 }
-/* DROPDOWN MENU */
-.services {
+/* Drop */
+.aprende {
 	position: relative;
 }
 .dropdown {
 	background-color: rgb(1, 139, 139);
-	padding: 1em 0;
-	position: absolute; /*WITH RESPECT TO PARENT*/
+	/* padding: 1em 0; */
+	position: absolute;
 	display: none;
 	border-radius: 8px;
-	top: 35px;
+	top: 30px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 .dropdown li + li {
 	margin-top: 10px;
 }
 .dropdown li {
-	padding: 0.5em 1em;
-	width: 8em;
+	/* padding: 0.5em 1em; */
+	width: auto;
 	text-align: center;
 }
 .dropdown li:hover {
 	background-color: #4c9e9e;
 }
-.services:hover .dropdown {
+.aprende:hover .dropdown {
 	display: block;
 }
 
