@@ -17,6 +17,15 @@
 	--article-text-color: rgb(0, 0, 0);
 	--article-title-size: 1.8em;
 	--article-text-size: 1em;
+
+	/* Acordeon */
+	--acordeon-bg-color: #eee;
+	--acordeon-text-color: #444;
+	--acordeon-text-size: 1em;
+	--acordeon-bg-hover-color: #ccc;
+	--acordeon-bg-active-color: rgb(206, 206, 206);
+	--acordeon-panel-bg-color: rgb(62, 62, 62);
+	--acordeon-panel-text-color: rgb(255, 255, 255);
 }
 
 * {
@@ -122,7 +131,7 @@ input[type="checkbox"] {
 
 /********************** Main Content *************************/
 
-#canvas {
+.canvas {
 	transform: translateY(120px);
 	width: 100%;
 	height: 100%;
@@ -135,24 +144,93 @@ input[type="checkbox"] {
 	justify-content: center;
 }
 
-#parent {
+.parent {
 	position: relative;
 	width: 90%;
 	height: 90%;
 	background-color: var(--article-bg-color);
 	color: var(--article-text-color);
-	border-radius: 25px;
+	border-radius: 10px;
 	font-size: var(--article-text-size);
 }
 
-#parent h1 {
+.parent h1 {
 	font-size: var(--article-title-size);
 	margin-bottom: 1em;
 	text-align: center;
 	margin: 40px 10px 30px 10px;
 }
 
-/* APPLYING MEDIA QUERIES */
+/************ Acordeon ****************/
+.acordeones {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	width: 90%;
+	max-width: 800px;
+	height: auto;
+	padding: 0.5em;
+	background-color: var(--acordeon-bg-color);
+	color: var(--acordeon-text-color);
+	border-radius: 10px;
+}
+
+.acordeon {
+	background-color: var(--acordeon-bg-color);
+	color: var(--acordeon-text-color);
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	/* border-top-left-radius: 10px;
+	border-top-right-radius: 10px; */
+	transition: 0.1s;
+	font-size: var(--acordeon-text-size);
+}
+
+.acordeon:hover {
+	background-color: var(--acordeon-bg-hover-color);
+}
+
+.active {
+	background-color: var(--acordeon-bg-active-color);
+
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.panel {
+	background-color: var(--acordeon-panel-bg-color);
+	color: var(--acordeon-panel-text-color);
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.1s ease-out;
+	width: 100%;
+	transition-delay: 100ms;
+}
+
+.panel li {
+	list-style: none;
+}
+
+.acordeon:after {
+	content: "\02795";
+	font-size: 13px;
+	color: var(--acordeon-text-color);
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\2796";
+}
+
+/* Menu responsive */
 @media (max-width: 768px) {
 	.menu {
 		display: none;
@@ -183,9 +261,12 @@ input[type="checkbox"] {
 	.aprende:hover .dropdown {
 		display: none;
 	}
-	#parent {
+	.parent {
 		width: 100%;
 		margin-top: 0;
 		font-size: 0.8em;
+	}
+	.acordeon {
+		font-size: 1em;
 	}
 }
