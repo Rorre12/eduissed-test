@@ -12,3 +12,7 @@ for (i = 0; i < ac.length; i++) {
 		}
 	});
 }
+
+for (let i = 7284; i <= 8000; i++) {
+	console.log(i);
+}

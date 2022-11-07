@@ -230,6 +230,12 @@ input[type="checkbox"] {
 	content: "\2796";
 }
 
+#introduccion {
+	line-height: 1.5em;
+	text-align: center;
+	margin: 1em 4em;
+}
+
 /* Menu responsive */
 @media (max-width: 768px) {
 	.menu {
