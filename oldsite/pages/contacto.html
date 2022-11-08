@@ -12,50 +12,45 @@
         promover el desarrollo de la educación sexual, integral y de género en los adolesentes"
 		/>
 		<title>EDUISSED</title>
-		<link rel="stylesheet" href="../style1.css" />
+		<link rel="stylesheet" href="../style.css" />
 		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 	</head>
 
 	<body>
 		<nav class="navbar">
 			<!-- Logo -->
-			<div class="logo">
+			<figure class="logo">
 				<a href="../index.html"
 					><img
 						src="../resources/images/eduissed_logo.png"
 						alt="logo" /></a
-				><span id="eduissed_header">EDUISSED</span>
-			</div>
+				><span id="eduissed/header">EDUISSED</span>
+			</figure>
 
 			<!-- Links of navbar -->
-			<ul class="nav-links">
-				<input type="checkbox" id="checkbox_toggle" />
-				<label for="checkbox_toggle" class="hamburger">&#9776;</label>
-				<div class="menu">
-					<li class="nosotros">
-						<a href="./nosotros.html">Nosotros</a>
-					</li>
-					<li class="aprende">
-						<a href="./aprende.html">Aprende</a>
-						<!-- dropdown-->
-						<ul class="dropdown">
-							<li>
-								<a href="aprende.html#ed-sex"
-									>Educación sexual
-								</a>
-							</li>
-							<li>
-								<a href="aprende.html#hse"
-									>Habilidades socioemocionales</a
-								>
-							</li>
-						</ul>
-					</li>
-					<li class="contacto">
-						<a href="./contacto.html">Contacto</a>
-					</li>
-				</div>
+			<ul class="nav-menu">
+				<li class="nosotros nav-item">
+					<a class="nav-link" href="./nosotros.html">Nosotros</a>
+				</li>
+				<li class="aprende nav-item">
+					<a class="nav-link" href="./aprende.html">Aprende</a>
+					<!-- dropdown-->
+					<ul class="dropdown">
+						<li><a href="#ed-sex">Educación sexual </a></li>
+						<li>
+							<a href="#hse">Habilidades socioemocionales</a>
+						</li>
+					</ul>
+				</li>
+				<li class="contacto nav-item">
+					<a class="nav-link" href="./contacto.html">Contacto</a>
+				</li>
 			</ul>
+			<button type="button" title="hamburger" class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</button>
 		</nav>
 
 		<!-- Página principal -->
@@ -65,5 +60,6 @@
 				<h1>Contáctanos</h1>
 			</article>
 		</div>
+		<script src="../main.js"></script>
 	</body>
 </html>

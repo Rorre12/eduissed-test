@@ -12,51 +12,49 @@
         promover el desarrollo de la educación sexual, integral y de género en los adolesentes"
 		/>
 		<title>EDUISSED</title>
-		<link rel="stylesheet" href="style1.css" />
+		<link rel="stylesheet" href="style.css" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	</head>
 
 	<body>
-		<!-- Navbar -->
 		<nav class="navbar">
 			<!-- Logo -->
-			<div class="logo">
-				<a href="index.html"
+			<figure class="logo">
+				<a href="./"
 					><img
 						src="./resources/images/eduissed_logo.png"
 						alt="logo" /></a
-				><span id="eduissed_header">EDUISSED</span>
-			</div>
+				><span id="eduissed/header">EDUISSED</span>
+			</figure>
 
 			<!-- Links of navbar -->
-			<ul class="nav-links">
-				<input type="checkbox" id="checkbox_toggle" />
-				<label for="checkbox_toggle" class="hamburger">&#9776;</label>
-				<div class="menu">
-					<li class="nosotros">
-						<a href="./pages/nosotros.html">Nosotros</a>
-					</li>
-					<li class="aprende">
-						<a href="./pages/aprende.html">Aprende</a>
-						<!-- dropdown-->
-						<ul class="dropdown">
-							<li>
-								<a href="./pages/aprende.html#ed-sex"
-									>Educación sexual
-								</a>
-							</li>
-							<li>
-								<a href="./pages/aprende.html#hse"
-									>Habilidades socioemocionales</a
-								>
-							</li>
-						</ul>
-					</li>
-					<li class="contacto">
-						<a href="./pages/contacto.html">Contacto</a>
-					</li>
-				</div>
+			<ul class="nav-menu">
+				<li class="nosotros nav-item">
+					<a class="nav-link" href="./pages/nosotros.html"
+						>Nosotros</a
+					>
+				</li>
+				<li class="aprende nav-item">
+					<a class="nav-link" href="./pages/aprende.html">Aprende</a>
+					<!-- dropdown-->
+					<ul class="dropdown">
+						<li><a href="#ed-sex">Educación sexual </a></li>
+						<li>
+							<a href="#hse">Habilidades socioemocionales</a>
+						</li>
+					</ul>
+				</li>
+				<li class="contacto nav-item">
+					<a class="nav-link" href="./pages/contacto.html"
+						>Contacto</a
+					>
+				</li>
 			</ul>
+			<button type="button" title="hamburger" class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</button>
 		</nav>
 
 		<!-- Página principal -->
@@ -65,16 +63,28 @@
 				<h1>
 					Educación Integral Socioemocional en Sexualidad Digitalizada
 				</h1>
-				<p id="introduccion">Educación Integral Socioemocional en Sexualidad Digitalizada. 
-					Actualmente, las estrategias de enseñanza-aprendizaje que  el sistema educativo desarrolla a través de
-					los docentes, suelen ser repetitivas y aburridas para los estudiantes, lo que ocasiona que no sean atractivas,
-					pierdan el interés por realizar las actividades y como consecuencia, no se logré el aprendizaje y comprensión
-					esperado sobre los temas; es por eso que decidimos diseñar "EDUISSED", una herramienta tecnopedagógica,
-					específicamente una pagina web,  que tiene como objetivo coadyuvar a la adquisición de habilidades
-					socioemocionales en sexualidad. Lo que la hace diferente y más atractiva, es que cuenta con realidad aumentada
-					para facilitar el aprendizaje y a su vez, hacerlo más didáctico y de interés para los estudiantes. Es importante
-					utilizar metodologías interactivas que estimulen la participación activa, y no solo transmitir información, es 
-					también adquirir habilidades socioemocionales en sexualidad.</p>
+				<p id="introduccion">
+					Educación Integral Socioemocional en Sexualidad
+					Digitalizada. Actualmente, las estrategias de
+					enseñanza-aprendizaje que el sistema educativo desarrolla a
+					través de los docentes, suelen ser repetitivas y aburridas
+					para los estudiantes, lo que ocasiona que no sean
+					atractivas, pierdan el interés por realizar las actividades
+					y como consecuencia, no se logré el aprendizaje y
+					comprensión esperado sobre los temas; es por eso que
+					decidimos diseñar "EDUISSED", una herramienta
+					tecnopedagógica, específicamente una pagina web, que tiene
+					como objetivo coadyuvar a la adquisición de habilidades
+					socioemocionales en sexualidad. Lo que la hace diferente y
+					más atractiva, es que cuenta con realidad aumentada para
+					facilitar el aprendizaje y a su vez, hacerlo más didáctico y
+					de interés para los estudiantes. Es importante utilizar
+					metodologías interactivas que estimulen la participación
+					activa, y no solo transmitir información, es también
+					adquirir habilidades socioemocionales en sexualidad.
+				</p>
 			</article>
 		</div>
+		<script src="./main.js"></script>
+	</body>
 </html>
