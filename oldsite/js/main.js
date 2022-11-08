@@ -1,5 +1,5 @@
-var ac = document.getElementsByClassName("acordeon");
-var i;
+let ac = document.getElementsByClassName("acordeon");
+let i;
 
 for (i = 0; i < ac.length; i++) {
 	ac[i].addEventListener("click", function () {
