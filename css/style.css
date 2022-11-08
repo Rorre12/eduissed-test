@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&display=swap");
 
 :root {
 	/* Doc Colors */
@@ -34,7 +34,7 @@
 }
 
 body {
-	font-family: Roboto, cursive;
+	font-family: Poppins, Roboto, cursive;
 	background-color: var(--doc-bg-color);
 	color: var(--doc-text-color);
 }
@@ -49,15 +49,20 @@ body {
 	background-color: var(--nav-bg-color);
 	color: var(--nav-text-color);
 }
-.nav-menu a {
+.nav-menu a,
+.aprende {
 	color: var(--nav-text-color);
 }
 
-.navbar li {
+.navbar li,
+.aprende {
 	list-style: none;
+	font-size: 1.2rem;
+	cursor: pointer;
 }
 
-.navbar a {
+.navbar a,
+.aprende {
 	text-decoration: none;
 }
 
@@ -93,6 +98,8 @@ body {
 /* Drop */
 .aprende {
 	position: relative;
+	border: none;
+	background-color: transparent;
 }
 .dropdown {
 	background-color: var(--nav-dropdown-bg-color);
@@ -108,8 +115,8 @@ body {
 }
 .dropdown li {
 	/* padding: 0.5em 1em; */
-	width: auto;
-	text-align: center;
+	width: 10rem;
+	text-align: left;
 }
 .dropdown li:hover {
 	background-color: var(--nav-dropdown-hover-color);
@@ -150,9 +157,10 @@ body {
 }
 
 .parent {
-	position: relative;
+	position: absolute;
 	width: 90%;
-	height: 90%;
+	height: auto;
+	min-height: 90%;
 	background-color: var(--article-bg-color);
 	color: var(--article-text-color);
 	border-radius: 10px;
@@ -166,78 +174,11 @@ body {
 	margin: 40px 10px 30px 10px;
 }
 
-/************ Acordeon ****************/
-.acordeones {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto;
-	width: 90%;
-	max-width: 800px;
-	height: auto;
-	padding: 0.5em;
-	background-color: var(--acordeon-bg-color);
-	color: var(--acordeon-text-color);
-	border-radius: 10px;
-}
-
-.acordeon {
-	background-color: var(--acordeon-bg-color);
-	color: var(--acordeon-text-color);
-	cursor: pointer;
-	padding: 18px;
-	width: 100%;
-	text-align: left;
-	border: none;
-	outline: none;
-	border-radius: 10px;
-	/* border-top-left-radius: 10px;
-	border-top-right-radius: 10px; */
-	transition: 0.1s;
-	font-size: var(--acordeon-text-size);
-}
-
-.acordeon:hover {
-	background-color: var(--acordeon-bg-hover-color);
-}
-
-.active-ac {
-	background-color: var(--acordeon-bg-active-color);
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
-}
-
-.panel {
-	background-color: var(--acordeon-panel-bg-color);
-	color: var(--acordeon-panel-text-color);
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.1s ease-out;
-	width: 100%;
-	transition-delay: 100ms;
-}
-
-.panel li {
-	list-style: none;
-}
-
-.acordeon:after {
-	content: "\02795";
-	font-size: 13px;
-	color: var(--acordeon-text-color);
-	float: right;
-	margin-left: 5px;
-}
-
-.active-ac:after {
-	content: "\2796";
-}
-
 #introduccion {
 	line-height: 1.5em;
-	text-align: center;
+	text-align: justify;
 	margin: 1em 4em;
+	font-size: large;
 }
 
 /* Menu responsive */
@@ -286,15 +227,14 @@ body {
 	.hamburger.active .bar:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
 	}
-	.aprende:hover .dropdown {
+	/* .aprende:hover .dropdown {
 		display: none;
-	}
+	} */
+
 	.parent {
+		position: absolute;
 		width: 100%;
-		margin-top: 0;
+		top: 50px;
 		font-size: 0.8em;
-	}
-	.acordeon {
-		font-size: 1em;
 	}
 }
