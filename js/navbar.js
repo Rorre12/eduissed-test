@@ -6,15 +6,12 @@ let navbar = `
 		><img
 			src="/resources/images/eduissed_logo.png"
 			alt="logo" /></a
-	><span id="eduissed/header">EDUISSED</span>
+	><span id="eduissed-header">EDUISSED</span>
 </figure>
 
 <!-- Links of navbar -->
 <ul class="nav-menu">
-	<li class="nosotros nav-item">
-		<a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
-	</li>
-	<li class="aprende nav-item">
+<li class="aprende nav-item">
 				<button type="button" class=" aprende">Aprende</button>
 				<!-- dropdown-->
 				<ul class="dropdown">
@@ -28,6 +25,10 @@ let navbar = `
 					<li><a href="/aprende/salud-sexual">8. Salud sexual y reproductiva</a></li>
 				</ul>
 			</li>
+	<li class="nosotros nav-item">
+		<a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+	</li>
+	
 	<li class="contacto nav-item">
 		<a class="nav-link" href="/pages/contacto.html">Contacto</a>
 	</li>
