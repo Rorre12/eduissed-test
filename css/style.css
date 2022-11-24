@@ -102,14 +102,17 @@ body {
 	font-size: 20px;
 }
 
-.nav-menu li:hover {
+.nav-menu li {
+	padding: 5px 14px;
+}
+
+.nav-menu li:hover,
+.nav-menu li:focus {
 	background-color: var(--nav-hover-color);
 	border-radius: 5px;
 	transition: 0.3s ease;
 }
-.nav-menu li {
-	padding: 5px 14px;
-}
+
 /* Drop */
 .aprende {
 	position: relative;
@@ -135,10 +138,12 @@ body {
 	width: 10rem;
 	text-align: left;
 }
-.dropdown li:hover {
+.dropdown li:hover,
+.dropdown li:focus {
 	background-color: var(--nav-dropdown-hover-color);
 }
-.aprende:hover .dropdown {
+.aprende:hover .dropdown,
+.aprende:focus .dropdown {
 	display: block;
 }
 
